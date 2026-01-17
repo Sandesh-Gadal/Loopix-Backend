@@ -15,6 +15,6 @@ Route::prefix('v1')->group(function () {
     Route::get('/projects', [ContentController::class, 'projects']);
     Route::get('/faqs', [ContentController::class, 'faqs']);
     Route::get('/clients', [ContentController::class, 'clients']);
-    Route::get('/team', [ContentController::class, 'team']);
-
+    Route::get('/teams', [ContentController::class, 'team']);
+    Route::get('/testimonials', [ContentController::class, 'testimonials']);
 });

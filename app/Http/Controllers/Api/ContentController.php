@@ -5,6 +5,7 @@ use App\Models\OurWork;
 use App\Models\Faq;
 use App\Models\Client;
 use App\Models\TeamMember;
+use App\Models\Testimonial;
 use Illuminate\Http\JsonResponse;
 
 class ContentController extends BaseController
@@ -31,5 +32,12 @@ class ContentController extends BaseController
     {
         $team = TeamMember::all();
         return $this->success($team, 'Team members retrieved successfully');
+    }
+
+    public function testimonials(): JsonResponse
+    {
+        // Assuming you have a Testimonial model
+        $testimonials = Testimonial::all();
+        return $this->success($testimonials, 'Testimonials retrieved successfully');
     }
 }
