@@ -12,4 +12,12 @@ class OurWork extends Model
         'tools_used' => 'array', // This lets you use a multi-select tags input in Filament
         'is_visible' => 'boolean',
     ];
+
+    // protected $appends = ['full_image_url'];
+
+    // public function getFullImageUrlAttribute(): string
+    // {
+    //     // Path: storage/app/public/our_works/image.jpg
+    //     return $this->image_url ? asset('storage/our-works/' . $this->image_url) : null;
+    // }
 }

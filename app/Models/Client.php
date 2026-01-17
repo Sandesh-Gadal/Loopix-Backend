@@ -13,4 +13,12 @@ class Client extends Model
     protected $casts = [
         'is_featured' => 'boolean',
     ];
+
+    // protected $appends = ['full_image_url'];
+
+    // public function getFullImageUrlAttribute(): string
+    // {
+    //     // Path: storage/app/public/clients/image.jpg
+    // return $this->logo_image_url ? asset('storage/clients/' . $this->logo_image_url) : null;
+    // }
 }
