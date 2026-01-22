@@ -24,15 +24,4 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
-# Force bypass of Plesk Site Preview 428 Errors
-<IfModule mod_env.c>
-    SetEnv NO_SITE_PREVIEW 1
-</IfModule>
 
-# Ensure CORS headers are sent even if the server is in "Preview" mode
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "http://localhost:5173"
-    Header set Access-Control-Allow-Credentials "true"
-    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
-    Header set Access-Control-Allow-Headers "Content-Type, X-Requested-With, Authorization"
-</IfModule>
